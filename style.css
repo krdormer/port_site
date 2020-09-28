@@ -47,7 +47,7 @@ section {
 h1 {
   font-family: Kaushan Script, sans-serif;
   font-size: 100px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 
 h2 {
@@ -79,7 +79,6 @@ a {
 a:hover,
 a:focus {
   color: var(--on-background);
-  border-bottom: 3px solid;
 }
 
 /* Home Section */
@@ -130,6 +129,7 @@ img {
 
 .project:hover {
   transform: scale(1.02);
+  text-decoration: none;
 }
 
 /* Contact Section */
