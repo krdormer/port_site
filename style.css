@@ -90,6 +90,7 @@ a:focus {
 /* About Section */
 .about-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .image-container {
@@ -105,46 +106,26 @@ a:focus {
 
 img {
   height: 300px;
-  width: 300px;
+  width: 400px;
 }
 
 /* Projects Section */
-.project-container {
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    margin: 1.5em;
-    padding: 1.5em;
-    border-radius: 10px;
+.proj-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .project {
-    border: 2px solid black;
-    margin: 2em;
-    background: url('../img/proj-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    text-align: center;
-    font-size: 1.5rem;
-    border-radius: 15px;
-    padding: 1em;
-    color: whitesmoke;
-    box-shadow: 5px 5px 5px 10px black; 
-}
-
-.project img {
-    width: 750px;
-}
-
-.project h2 {
-    font-size: 3rem;
-}
-
-.project:hover {
-    transform: scale(1.08);
-    box-shadow: 2px 2px 5px 5px black;
-    cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;;
+  width: 500px;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+  text-align: center;
 }
 
 /* Contact Section */
