@@ -100,6 +100,7 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  text-align: center;
 }
 
 img {
@@ -111,7 +112,7 @@ img {
 .project-container {
     text-align: center;
     font-size: 2rem;
-    color: whitesmoke;
+    color: black;
     margin: 1.5em;
     padding: 1.5em;
     border-radius: 10px;
