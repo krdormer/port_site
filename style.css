@@ -90,17 +90,19 @@ a:focus {
 .about-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-container {
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 25px;
-  width: auto;
+  text-align: center;
+  width: 33vw;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   background: var(--background);
   box-shadow: var(--box-shadow);
-  text-align: center;
 }
 
 img {
