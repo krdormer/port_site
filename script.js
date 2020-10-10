@@ -14,8 +14,8 @@ function imageMode(color) {
     image1.src = `img/undraw_proud_coder_${color}.svg`;
     image2.src = `img/undraw_feeling_proud_${color}.svg`;
     image3.src = `img/undraw_conceptual_idea_${color}.svg`;
-    image4.src = `img/meditate${color}.svg`;
-    image5.src = `img/yoga${color}.svg`;
+    image4.src = `img/meditate_${color}.svg`;
+    image5.src = `img/yoga_${color}.svg`;
 }
 
 function toggleDarkLightMode(isDark){
