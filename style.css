@@ -105,6 +105,11 @@ a:focus {
   box-shadow: var(--box-shadow);
 }
 
+.image-container:hover {
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
 img {
   height: 300px;
   width: 400px;
