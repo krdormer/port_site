@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" href="favicon.ico">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Bootstrap 4.5 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,12 +29,28 @@
             <div class="slider round"></div>
         </label>
     </div>
+
     <!-- Navigation -->
-    <nav id="nav">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
+    <nav class="navbar navbar-expand-md bg-transparent" id='nav'>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarToggleLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Links: &#9660;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Home Section -->
@@ -47,7 +65,7 @@
     <!-- About Section -->
     <section id="about">
         <h1>Some things I enjoy...</h1>
-        <div class="about-container">
+        <div class="container-fluid about-container">
             <div class="image-container">
                 <h2>Problem Solving</h2>
                 <img src="../src/img/problem_solving_light.svg" alt="Problem solving" id="image1">
@@ -117,6 +135,9 @@
     <script src='../src/initial.js'></script>
     <!-- Page Script -->
     <script src="../src/themeSwitch.js"></script>
-
+    <!-- Scripts for Bootstrap 4.5 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
