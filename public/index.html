@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kevin D || Web Developer</title>
+
+    <!-- My Favicon -->
     <link rel="icon" type="image/png" href="favicon.ico">
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Dark Mode Switch -->
     <div class="theme-switch-wrapper">
@@ -31,6 +38,7 @@
     <!-- Home Section -->
     <section id='home'>
         <div class="title-group">
+            <!-- Empty elements for use by initial.js to type out greeting  -->
             <h1 id='type_text'></h1>
             <h2 id='type_text_two'></h2>
         </div>
@@ -41,24 +49,28 @@
         <h1>Some things I enjoy...</h1>
         <div class="about-container">
             <div class="image-container">
-                <h2>Dog Walking</h2>
-                <img src="img/undraw_dog_walking.svg" alt="Dog walking" id="image1">
+                <h2>Problem Solving</h2>
+                <img src="../src/img/problem_solving_light.svg" alt="Problem solving" id="image1">
+            </div>
+            <div class="image-container">
+                <h2>Developing</h2>
+                <img src="../src/img/dev_light.svg" alt="Developer" id="image2">
+            </div>
+            <div class="image-container">
+                <h2>Walking my Pups</h2>
+                <img src="../src/img/dog_walking_light.svg" alt="Dog walking" id="image3">
             </div>
             <div class="image-container">
                 <h2>Bike Riding</h2>
-                <img src="img/undraw_Ride_a_bicycle_2yok.svg" alt="Bike Riding" id="image2">
-            </div>
-            <div class="image-container">
-                <h2>Problem Solving</h2>
-                <img src="img/undraw_feeling_proud_light.svg" alt="Proud coder" id="image3">
+                <img src="../src/img/biking_light.svg" alt="Bike Riding" id="image4">
             </div>
             <div class="image-container">
                 <h2>Meditation</h2>
-                <img src="img/meditation_light.svg" alt="Sitting meditation" id="image4">
+                <img src="../src/img/meditation_light.svg" alt="Sitting meditation" id="image5">
             </div>
             <div class="image-container">
                 <h2>Yoga</h2>
-                <img src="img/yoga_light.svg" alt="Yoga" id="image5">
+                <img src="../src/img/yoga_light.svg" alt="Yoga" id="image6">
             </div>
         </div>
     </section>
@@ -71,21 +83,21 @@
                 <a href='https://infallible-meitner-a4aed7.netlify.app/'>
                     <h2>CRWN-Clothing</h2>
                     <p>(My latest work in progress!)</p>
-                    <img src="img/crwn.png" alt="clothing e-commerce site">
+                    <img src="../src/img/crwn-clothing.png" alt="clothing e-commerce site">
                     <p>Click for a live demo!</p>
                 </a>
             </div>
             <div class="project">
                 <a href='https://ecstatic-tesla-028dec.netlify.app/'>
                     <h2>Picture-In-Picture</h2>
-                    <img src="img/pip.png" alt="Picture in picture project">
+                    <img src="../src/img/pip.png" alt="Picture in picture project">
                     <p>Click for a live demo!</p>
                 </a>
             </div>
             <div class="project">
                 <a href='https://jovial-benz-9278be.netlify.app/'>
                     <h2>Robo-Joke-Teller</h2>
-                    <img src="img/robotJokeTeller.png" alt="Robot joke teller project">
+                    <img src="../src/img/robotJokeTeller.png" alt="Robot joke teller project">
                     <p>Click for a live demo!</p>
                 </a>
             </div>
@@ -102,9 +114,9 @@
     </section>
 
     <!-- Initial Content-Load script -->
-    <script src='initial.js'></script>
+    <script src='../src/initial.js'></script>
     <!-- Page Script -->
-    <script src="script.js"></script>
+    <script src="../src/themeSwitch.js"></script>
 
 </body>
 </html>
