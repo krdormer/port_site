@@ -96,29 +96,46 @@
     <!-- Projects Section -->
     <section id="projects">
         <h1>My Projects</h1>
-        <div class="proj-container">
-            <div class="project">
-                <a href='https://infallible-meitner-a4aed7.netlify.app/'>
-                    <h2>CRWN-Clothing</h2>
-                    <p>(My latest work in progress!)</p>
-                    <img src="../src/img/crwn-clothing.png" alt="clothing e-commerce site">
-                    <p>Click for a live demo!</p>
-                </a>
+        <div class="project-container">
+            <div class='project-row'>
+                <div class="project-card" id='project-one'>
+                    <a href='https://infallible-meitner-a4aed7.netlify.app/'>
+                        <h2>CRWN-Clothing</h2>
+                        <img src="../src/img/crwn-clothing.png" alt="clothing e-commerce site">
+                        <p>Click for a live demo!</p>
+                    </a>
+                </div>
+                <div class="project-1-description">
+                    <p>CRWN Clothing is a mock e-commerce website, built with React.js, and has its state managed with Redux. This project integrates Stripe's API for electronic payments, and is designed with simplicity and user experience in mind. (Work in progress, planned to be complete by end of 10/2020. Please feel free to look it over, and report any bugs found! I am always open to feedback.)</p>
+                </div>
             </div>
-            <div class="project">
-                <a href='https://ecstatic-tesla-028dec.netlify.app/'>
-                    <h2>Picture-In-Picture</h2>
-                    <img src="../src/img/pip.png" alt="Picture in picture project">
-                    <p>Click for a live demo!</p>
-                </a>
+
+            <div class='project-row'>
+                <div class="project-card">
+                    <a href='https://ecstatic-tesla-028dec.netlify.app/'>
+                        <h2>Picture-In-Picture</h2>
+                        <img src="../src/img/pip.png" alt="Picture in picture project">
+                        <p>Click for a live demo!</p>
+                    </a>
+                </div>
+                <div class="project-2-description">
+                    <p>The Picture-In-Picture project allows a user to select a video stream from any open window on their desktop and play it in a second window which is moveable and responsive to sizing, and can be placed on top of other content for a 'picture in picture' effect. Simply open the project by following the link, and you will be prompted to select where the desired stream is located. (If not auto-prompted on page load, please simply refresh your browser tab and the prompt should display.) Once selected, hit the 'Start' button, and the PIP window will popup showing the selected video stream. This project was created with simple JavaScript, and DOM manipulation.</p>
+                </div>
             </div>
-            <div class="project">
-                <a href='https://jovial-benz-9278be.netlify.app/'>
-                    <h2>Robo-Joke-Teller</h2>
-                    <img src="../src/img/robotJokeTeller.png" alt="Robot joke teller project">
-                    <p>Click for a live demo!</p>
-                </a>
+
+            <div class='project-row'>
+                <div class="project-card">
+                    <a href='https://jovial-benz-9278be.netlify.app/'>
+                        <h2>Robo-Joke-Teller</h2>
+                        <img src="../src/img/robotJokeTeller.png" alt="Robot joke teller project">
+                        <p>Click for a live demo!</p>
+                    </a>
+                </div>
+                <div class="project-3-description">
+                    <p>Robo-Joke-Teller is a simple web app made with HTML and Javascript. When the 'Tell me a joke' button is pressed, the JokeAPI is called, and a programming joke is returned. This joke is then read by a second API, VoiceRSS, which uses a text-to-speech program to read the new joke. All jokes are Safe For Work!</p>
+                </div>
             </div>
+
         </div>
     </section>
 
