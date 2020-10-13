@@ -335,18 +335,13 @@ input:checked + .slider::before {
 
   /* Projects Section */
   .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     width: 100%;
   }
 
   .project-card {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    display: inline-block;
-    padding: 1em;
-    width: 50%;
+    width: 100%;
     font-size: 0.5em;
     background: var(--background);
     box-shadow: var(--box-shadow);
@@ -354,6 +349,7 @@ input:checked + .slider::before {
 
   .project-card img {
     width: 100%;
+    height: auto;
     padding: 1em;
   }
 
@@ -364,28 +360,26 @@ input:checked + .slider::before {
 
   .project-row {
     width: 100%;
+    text-align: center;
   }
 
   .project-1-description {
-    float: right;
-    width: 50%;
-    position: relative;
-    font-size: 0.5em;
+    position: static;
+    width: 100%;  
+    margin-top: 1em;
   }
 
   .project-2-description {
-    float: left;
-    width: 50%;
-    font-size: 0.5em;
-    margin-top: 2em;
-    padding-right: 2em;
+    position: static;
+    margin-top: 1em;
+    padding: 0;
+    width: 100%;
   }
 
   .project-3-description {
-    float: right;
-    width: 50%;
-    position: relative;
-    font-size: 0.5em;
+    position: static;
+    width: 100%;  
+    margin-top: 1em;
   }
 }
 
