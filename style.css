@@ -270,10 +270,6 @@ input:checked + .slider::before {
     text-align: center;
   }
 
-  section {
-    margin-bottom: 5em;
-  }
-
   h1 {
     font-size: 4em;
   }
