@@ -1,7 +1,7 @@
 let textOne = "Howdy, I'm Kevin!";
 let textArrayOne = textOne.split("");
 
-let textTwo = "Welcome to my portfolio!";
+let textTwo = "Glad you're here. Please take a look around!";
 let textArrayTwo = textTwo.split("");
 
 //////////////////////////////////////////////////////////////////////////////////////////
