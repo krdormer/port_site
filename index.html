@@ -10,48 +10,31 @@
     <!-- My Favicon -->
     <link rel="icon" type="image/png" href="favicon.ico">
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <!-- Bootstrap 4.5 CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Dark Mode Switch -->
-    <div class="theme-switch-wrapper">
-        <span id="toggle-icon">
-            <span class="toggle-text">Light Mode</span>
-            <i class='fas fa-sun'></i>
-        </span>
-        <label class="theme-switch">
-            <input type="checkbox">
-            <div class="slider round"></div>
-        </label>
-    </div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md bg-transparent" id='nav'>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarToggleLinks" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">Links &#9660;</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
-            </ul>
+    <div class="navbar">
+        <a class='nav-item' href="#">Link</a>
+        <a class='nav-item' href="#">Link</a>
+        <a class='nav-item' href="#">Link</a>
+        <a class='nav-item' href="#">Link</a>
+        <!-- Dark Mode Switch -->
+        <div class="theme-switch-wrapper">
+            <span id="toggle-icon">
+                <span class="toggle-text">Light Mode</span>
+                <i class='fas fa-sun'></i>
+            </span>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <div class="slider round"></div>
+            </label>
         </div>
-    </nav>
+    </div>
 
     <!-- Home Section -->
     <section id='home'>
@@ -96,20 +79,7 @@
     <!-- Projects Section -->
     <section id="projects">
         <h1>My Projects</h1>
-        <div class="project-container">
-            <!-- <div class='project-row'>
-                <div class="project-card" id='project-one'>
-                    <a href='https://infallible-meitner-a4aed7.netlify.app/'>
-                        <h2>CRWN-Clothing</h2>
-                        <img src="../src/img/crwn-clothing.png" alt="clothing e-commerce site">
-                        <p>Click for a live demo!</p>
-                    </a>
-                </div>
-                <div class="project-1-description">
-                    <p>CRWN Clothing is a mock e-commerce website, built with React.js, and has its state managed with Redux. This project integrates Stripe's API for electronic payments, and is designed with simplicity and user experience in mind. (Work in progress, planned to be complete by end of 10/2020. Please feel free to look it over, and report any bugs found! I am always open to feedback.)</p>
-                </div>
-            </div> -->
-
+        <!-- <div class="project-container">
             <div class='project-row'>
                 <div class="project-card" id='project-two'>
                     <a href='https://pensive-lalande-1bc142.netlify.app/'>
@@ -119,35 +89,60 @@
                     </a>
                 </div>
                 <div class="project-2-description">
-                    <p>SmartBrain is a React app, built on Clarifai's Facial Detection API. It will take an image URL as input, and will detect a face in the supplied picture. Based on the datas returned from the API call, a bounding box is then constructed around the subject's face to demonstrate the prediction. Backend is an express.js server, hosted on Heroku.</p>
+                    <p>SmartBrain is a React app, built on Clarifai's Facial Detection API. It will take an image URL as
+                        input, and will detect a face in the supplied picture. Based on the datas returned from the API
+                        call, a bounding box is then constructed around the subject's face to demonstrate the
+                        prediction. Backend is an express.js server, hosted on Heroku.</p>
                 </div>
+            </div> -->
+        <div class='project-row'>
+            <div class="project-card" id='project-two'>
+                <a href='https://pedantic-mcnulty-588e81.netlify.app/'>
+                    <h2>CRWN Clothing</h2>
+                    <img src="../src/img/crwn-clothing.png" alt="clothing e-commerce site">
+                    <p>Click for a live demo!</p>
+                </a>
             </div>
+            <div class="project-2-description">
+                <p>CRWN Clothing</p>
+            </div>
+        </div>
 
-            <div class='project-row'>
-                <div class="project-card" id='project-three'>
-                    <a href='https://ecstatic-tesla-028dec.netlify.app/'>
-                        <h2>Picture-In-Picture</h2>
-                        <img src="../src/img/pip.png" alt="Picture in picture project">
-                        <p>Click for a live demo!</p>
-                    </a>
-                </div>
-                <div class="project-3-description">
-                    <p>The Picture-In-Picture project allows a user to select a video stream from any open window on their desktop and play it in a second window which is moveable and responsive to sizing, and can be placed on top of other content for a 'picture in picture' effect. Simply open the project by following the link, and you will be prompted to select where the desired stream is located. (If not auto-prompted on page load, please simply refresh your browser tab and the prompt should display.) Once selected, hit the 'Start' button, and the PIP window will popup showing the selected video stream. This project was created with simple JavaScript, and DOM manipulation.</p>
-                </div>
+        <div class='project-row'>
+            <div class="project-card" id='project-three'>
+                <a href='https://ecstatic-tesla-028dec.netlify.app/'>
+                    <h2>Picture-In-Picture</h2>
+                    <img src="../src/img/pip.png" alt="Picture in picture project">
+                    <p>Click for a live demo!</p>
+                </a>
             </div>
+            <div class="project-3-description">
+                <p>The Picture-In-Picture project allows a user to select a video stream from any open window on
+                    their desktop and play it in a second window which is moveable and responsive to sizing, and can
+                    be placed on top of other content for a 'picture in picture' effect. Simply open the project by
+                    following the link, and you will be prompted to select where the desired stream is located. (If
+                    not auto-prompted on page load, please simply refresh your browser tab and the prompt should
+                    display.) Once selected, hit the 'Start' button, and the PIP window will popup showing the
+                    selected video stream. This project was created with simple JavaScript, and DOM manipulation.
+                </p>
+            </div>
+        </div>
 
-            <div class='project-row'>
-                <div class="project-card" id ='project-four'>
-                    <a href='https://jovial-benz-9278be.netlify.app/'>
-                        <h2>Robo-Joke-Teller</h2>
-                        <img src="../src/img/robotJokeTeller.png" alt="Robot joke teller project">
-                        <p>Click for a live demo!</p>
-                    </a>
-                </div>
-                <div class="project-4-description">
-                    <p>Robo-Joke-Teller is a simple web app made with HTML and Javascript. When the 'Tell me a joke' button is pressed, the JokeAPI is called, and a programming joke is returned. This joke is then read by a second API, VoiceRSS, which uses a text-to-speech program to read the new joke. All jokes are Safe For Work!</p>
-                </div>
+        <div class='project-row'>
+            <div class="project-card" id='project-four'>
+                <a href='https://jovial-benz-9278be.netlify.app/'>
+                    <h2>Robo-Joke-Teller</h2>
+                    <img src="../src/img/robotJokeTeller.png" alt="Robot joke teller project">
+                    <p>Click for a live demo!</p>
+                </a>
             </div>
+            <div class="project-4-description">
+                <p>Robo-Joke-Teller is a simple web app made with HTML and Javascript. When the 'Tell me a joke'
+                    button is pressed, the JokeAPI is called, and a programming joke is returned. This joke is then
+                    read by a second API, VoiceRSS, which uses a text-to-speech program to read the new joke. All
+                    jokes are Safe For Work!</p>
+            </div>
+        </div>
 
         </div>
     </section>
@@ -165,9 +160,6 @@
     <script src='../src/initial.js'></script>
     <!-- Page Script -->
     <script src="../src/themeSwitch.js"></script>
-    <!-- Scripts for Bootstrap 4.5 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>
