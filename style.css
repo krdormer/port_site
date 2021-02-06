@@ -152,27 +152,33 @@ img {
 }
 
 #project-one-content {
-  flex: 50%;
+  flex: 40%;
 }
 
 .project-one-description {
-  flex: 50%;
+  flex: 70%;
+  margin: 10%;
+  font-size: 1.5em;
 }
 
 #project-two-content {
-  flex: 50%;
+  flex: 40%;
 }
 
 .project-two-description {
-  flex: 50%;
+  flex: 60%;
+  margin: 10%;
+  font-size: 1.5em;
 }
 
 #project-three-content {
-  flex: 50%;
+  flex: 40%;
 }
 
 .project-three-description {
-  flex: 50%;
+  flex: 60%;
+  margin: 10%;
+  font-size: 1.5em;
 }
 
 
