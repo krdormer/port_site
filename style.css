@@ -141,7 +141,7 @@ img {
   box-shadow: var(--box-shadow);
 }
 
-.project-card {
+.project-card:hover {
   transform: scale(1.1);
 }
 
