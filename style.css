@@ -46,17 +46,11 @@ section {
   flex-direction: column;
   margin-bottom: 15em;
 }
-
-/* NavBar */
-.navbar {
-  display: flex;
-}
-
 /* Intro Section  */
 .title-group h1 {
   font-family: Kaushan Script, sans-serif;
   font-size: 7em;
-  margin-bottom: 25px;
+  margin: 0;
 }
 
 .title-group h2 {
@@ -145,4 +139,123 @@ input:checked + .slider::before {
 .fas {
   font-size: 2em;
   margin-right: 5px;
+}
+
+
+/* // About Section // */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+
+.image-container {
+  width: 20%;
+  padding: 4%;
+  margin: 2%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+
+.image-container:hover {
+  box-shadow: 1px 1px black;
+  transform: scale(1.1);
+}
+
+.image-container img {
+  width: 100%;
+}
+
+
+/* Project section */
+.project-container {
+  width: 90vw;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.project-row {
+  display: flex;
+}
+
+.project-card {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+}
+
+#project-one-content {
+  height: auto;
+  padding: 3%;
+  margin: 2% 0 2% 3%;
+  flex: 40%;
+}
+
+.project-one-description {
+  flex: 40%;
+  padding: 10%;
+}
+
+#project-two-content {
+  padding-top: 3%;
+  margin: 2% 3% 2% 0%;
+  flex: 40%;
+}
+
+.project-two-description {
+  flex: 40%;
+  padding: 10%;
+}
+
+#project-three-content {
+  height: auto;
+  padding: 3%;
+  margin: 2% 0 2% 3%;
+  flex: 40%;
+}
+
+.project-three-description {
+  flex: 40%;
+  padding: 10%;
+}
+
+.project-card a {
+  text-decoration: none;
+}
+
+.project-card img{
+  width: 80%;
+}
+
+
+/* Contact Section */
+#contact {
+  margin-bottom: 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.github-img {
+  flex: 30%;
+  margin: 0 10%;
+}
+
+.linkedin-img {
+  flex: 30%;
+  margin: 0 10%;
 }

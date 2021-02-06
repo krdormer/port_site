@@ -1,8 +1,11 @@
-let textOne = "Howdy, I'm Kevin!";
-let textArrayOne = textOne.split("");
+let lineOneText = "Howdy, I'm Kevin!";
+let textArrayOne = lineOneText.split("");
 
-let textTwo = "Glad you're here. Please take a look around!";
+let textTwo = "I am a Web Developer from Austin, Texas.";
 let textArrayTwo = textTwo.split("");
+
+let textThree = "Please, take a look around!";
+let textArrayThree = textThree.split("");
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -26,9 +29,23 @@ function looperTwo() {
     timer = setTimeout('looperTwo()', 70);
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////
+function looperThree() {
+    if (textArrayThree.length > 0) {
+        document.getElementById('type_text_three').innerHTML += textArrayThree.shift();
+    } else {
+        clearTimeout(looperThree);
+        return false;
+    }
+    timer = setTimeout('looperThree()', 100);
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////
 looperOne();
 
 setTimeout(() => {
     looperTwo();
 }, 2000);
+
+setTimeout(() => {
+    looperThree();
+}, 5500)
