@@ -80,7 +80,6 @@ a {
 a:hover,
 a:focus {
   color: var(--on-background);
-  border-bottom: 3px solid;
 }
 
 .nav-items {
@@ -174,7 +173,7 @@ img {
 /* Contact Section */
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin-right: 0;
   cursor: pointer;
   color: var(--primary-color);
 }
