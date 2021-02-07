@@ -45,7 +45,8 @@ section {
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 100px;
+  font-size: 90px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -89,11 +90,10 @@ a:focus {
 /* ////////// Home Section ////////// */
 .title-group {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.title-group h1 {
-  margin-top: 0.5em;
-}
 
 .profile-image {
   width: 250px;
@@ -107,7 +107,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80vw;
+  width: 100vw;
 }
 
 .image-container {
@@ -131,59 +131,44 @@ img {
   margin-top: 10em;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .project-card {
+  flex: 40%;
+  margin: 3em;
+  padding: 2em;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
-  padding: 10px 20px;
-  margin: 25px;
-  width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
 }
 
 .project-card:hover {
   transform: scale(1.1);
-}
-
-.project-container {
-  width: 80%;
-}
-
-.project-row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-#project-one-content {
-  flex: 40%;
+  cursor: pointer;
 }
 
 .project-one-description {
-  flex: 70%;
-  margin: 10%;
-  font-size: 1.5em;
-}
-
-#project-two-content {
-  flex: 40%;
+  flex: 30%;
+  margin: 9em;
+  font-size: 20px;
 }
 
 .project-two-description {
-  flex: 60%;
-  margin: 10%;
-  font-size: 1.5em;
-}
-
-#project-three-content {
-  flex: 40%;
+  flex: 30%;
+  margin: 9em;
+  font-size: 20px;
 }
 
 .project-three-description {
-  flex: 60%;
-  margin: 10%;
-  font-size: 1.5em;
+  flex: 30%;
+  margin: 9em;
+  font-size: 20px;
 }
+
 
 
 /* Contact Section */
