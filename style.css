@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   color: var(--on-background-alt);
-  font-size: 32px;
+  font-size: 45px;
   font-weight: normal;
 }
 
@@ -106,7 +106,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  width: 80vw;
 }
 
 .image-container {
@@ -114,7 +114,7 @@ a:focus {
   border-radius: 10px;
   padding: 10px 20px;
   margin: 25px;
-  width: auto;
+  width: 20%;;
   background: var(--background);
   box-shadow: var(--box-shadow);
 }
@@ -130,15 +130,23 @@ img {
   margin-top: 10em;
 }
 
+#projects h2 {
+  text-decoration: underline;
+}
+
 .project-container {
+  width: 80vw;
+}
+
+.project-row {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 4em 0;
 }
 
 .project-card {
-  flex: 40%;
-  margin: 3em;
-  padding: 2em;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   background: var(--background);
@@ -150,24 +158,27 @@ img {
   cursor: pointer;
 }
 
-.project-one-description {
-  flex: 30%;
-  margin: 9em;
-  font-size: 20px;
+.project-card-description {
+  flex: 1;
+  font-size: 1.5em;
+  padding: 1em;
+  margin: 2em;
 }
 
-.project-two-description {
-  flex: 30%;
-  margin: 9em;
-  font-size: 20px;
+#project-one-card {
+  width: 30%;
+  padding: 1em;
 }
 
-.project-three-description {
-  flex: 30%;
-  margin: 9em;
-  font-size: 20px;
+#project-two-card {
+  width: 30%;
+  padding: 1em;
 }
 
+#project-three-card {
+  width: 30%;
+  padding: 1em;
+}
 
 
 /* Contact Section */
