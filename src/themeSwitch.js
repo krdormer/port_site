@@ -8,6 +8,8 @@ const image3 = document.getElementById('image3');
 const image4 = document.getElementById('image4');
 const image5 = document.getElementById('image5');
 const image6 = document.getElementById('image6');
+const image7 = document.getElementById('image7');
+
 
 const projectImageOne = document.getElementById('projectImageOne');
 const projectImageTwo = document.getElementById('projectImageTwo');
@@ -23,6 +25,8 @@ function imageMode(color) {
     image4.src = `../src/img/biking_${color}.svg`;
     image5.src = `../src/img/meditation_${color}.svg`;
     image6.src = `../src/img/yoga_${color}.svg`;
+    image7.src = `../src/img/escape_room_${color}.svg`;
+
 
     projectImageOne.src = `../src/img/shopping_${color}.svg`;
     projectImageTwo.src = `../src/img/pip_${color}.svg`;
