@@ -30,7 +30,7 @@ function imageMode(color) {
 
     projectImageOne.src = `../src/img/shopping_${color}.svg`;
     projectImageTwo.src = `../src/img/pip_${color}.svg`;
-    projectImageThree.src = `../src/img/jtb_${color}.svg`;
+    projectImageThree.src = `../src/img/joke_bot_${color}.svg`;
 }
 
 function toggleDarkLightMode(isDark) {
