@@ -267,3 +267,106 @@ input:checked + .slider::before {
   font-size: 30px;
   margin-right: 5px;
 }
+
+
+
+/*/////////////// Media Queries ///////////////*/
+
+/* ////////// Extra small devices (phones, 600px and down) ////////// */
+@media only screen and (max-width: 600px) {
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+}
+
+/* ////////// XS Navigation Section ////////// */
+nav {
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding: 32px;
+  width: 100vw;
+  background: rgb(255 255 255 / 50%);
+}
+
+a {
+  margin-right: 15px;
+}
+
+/* ////////// XS About Section ////////// */
+
+.image-container {
+  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+/* ////////// XS Project Section ////////// */
+.project-container {
+  width: 90vw;
+}
+
+.project-card-description {
+  flex: 1;
+  font-size: 1em;
+  padding: 1em;
+  margin: 2em;
+}
+
+#project-one-card {
+  width: 30%;
+}
+
+#project-two-card {
+  width: 30%;
+}
+
+#project-three-card {
+  width: 30%;
+}
+
+/* ////////// XS Dark Mode Toggle ////////// */
+.theme-switch-wrapper {
+  right: 18px;
+  top: 28px;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.toggle-text {
+  right: 0;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
