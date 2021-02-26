@@ -512,6 +512,7 @@ input:checked + .slider::before {
     margin-right: 5px;
   }
 }
+/* ////////// Media Queries //////////*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -520,7 +521,45 @@ input:checked + .slider::before {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+  /* ////////// Large Home Section ////////// */
+  .title-group {
+    margin-top: 7%;
+  }
+
+  /* ////////// Large About Section ////////// */
+  .about-container {
+    width: 100vw;
+  }
+
+  .image-container {
+    width: 28%;
+  }
+
+  /* ////////// Large Project Section ////////// */
+
+  .project-container {
+    width: 100vw;
+  }
+  
+  #project-one-card {
+    margin-left: 50px;
+  }
+  
+  #project-two-card {
+    margin-right: 50px;
+  }
+
+  #project-three-card {
+    margin-left: 50px;
+  }
+    
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  /* ////////// X Large About Section ////////// */
+  .about-container {
+    width: 100vw;
+  }
+}
