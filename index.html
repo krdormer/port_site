@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
 
     <title>Kevin D || Web Developer</title>
 
@@ -41,7 +43,7 @@
     <!-- Home Section -->
     <header>
         <section id="home">
-            <div class="title-group">
+            <div class="intro-group">
                 <img src="./src/img/me.jpeg" alt="Picture of Kevin" class='profile-image'>
                 <h1 id="type_text"></h1>
                 <h2 id="type_text_two"></h2>
@@ -52,33 +54,33 @@
 
     <!-- About Section -->
     <section id="about">
-        <h2>Some personal interests of mine...</h2>
+        <h2 class='section-title'>Some personal interests of mine...</h2>
         <div class="about-container">
-            <div class="image-container">
+            <div class="about-card">
                 <h2>Problem Solving</h2>
                 <img src="../src/img/problem_solving_light.svg" alt="Problem solving" id="image1">
             </div>
-            <div class="image-container">
+            <div class="about-card">
                 <h2>Software Development</h2>
                 <img src="../src/img/dev_light.svg" alt="Developer" id="image2">
             </div>
-            <div class="image-container">
-                <h2>Walking my Pups</h2>
+            <div class="about-card">
+                <h2>Taking walks with my dogs</h2>
                 <img src="../src/img/dog_walking_light.svg" alt="Dog walking" id="image3">
             </div>
-            <div class="image-container">
-                <h2>Bike Riding</h2>
+            <div class="about-card">
+                <h2>Trail Riding</h2>
                 <img src="../src/img/biking_light.svg" alt="Bike Riding" id="image4">
             </div>
-            <div class="image-container">
+            <div class="about-card">
                 <h2>Meditation</h2>
                 <img src="../src/img/meditation_light.svg" alt="Sitting meditation" id="image5">
             </div>
-            <div class="image-container">
+            <div class="about-card">
                 <h2>Yoga</h2>
                 <img src="../src/img/yoga_light.svg" alt="Yoga" id="image6">
             </div>
-            <div class="image-container">
+            <div class="about-card">
                 <h2>Escape Rooms</h2>
                 <img src="../src/img/escape_room_light.svg" alt="Escape Room" id="image7">
             </div>
@@ -87,16 +89,18 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 class='section-title'>My Projects</h2>
 
         <div class="project-container">
             <div class="project-row">
                 <div class="project-card" id='project-one-card'>
-                    <img src="./src/img/shopping_light.svg" alt="CRWN clothing" id="projectImageOne">
-                    <a href="https://pedantic-mcnulty-588e81.netlify.app/" target="_blank"
-                        aria-label="CRWN Clothing Demo">
-                        <p>Click here for a live demo!</p>
-                    </a>
+                    <div class="project-card-content">
+                        <img src="./src/img/shopping_light.svg" alt="CRWN clothing" id="projectImageOne">
+                        <a href="https://pedantic-mcnulty-588e81.netlify.app/" target="_blank"
+                            aria-label="CRWN Clothing Demo">
+                            <p>Click here for a live demo!</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card-description">
                     <h3>CRWN Clothing</h3>
@@ -116,21 +120,25 @@
                     </p>
                 </div>
                 <div class="project-card" id='project-two-card'>
-                    <img src="./src/img/pip_light.svg" alt="Picture-In-Picture" id="projectImageTwo">
-                    <a href="https://ecstatic-tesla-028dec.netlify.app/" target="_blank"
-                        aria-label="Picture-In-Picture Demo">
-                        <p>Click here for a live demo!</p>
-                    </a>
+                    <div class="project-card-content">
+                        <img src="./src/img/pip_light.svg" alt="Picture-In-Picture" id="projectImageTwo">
+                        <a href="https://ecstatic-tesla-028dec.netlify.app/" target="_blank"
+                            aria-label="Picture-In-Picture Demo">
+                            <p>Click here for a live demo!</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-row">
                 <div class="project-card" id='project-three-card'>
-                    <img src="./src/img/joke_bot_light.svg" alt="Joke Telling Bot" id="projectImageThree">
-                    <a href="https://jovial-benz-9278be.netlify.app/" target="_blank"
-                        aria-label="Joke Telling Bot Demo">
-                        <p>Click here for a live demo!</p>
-                    </a>
+                    <div class="project-card-content">
+                        <img src="./src/img/joke_bot_light.svg" alt="Joke Telling Bot" id="projectImageThree">
+                        <a href="https://jovial-benz-9278be.netlify.app/" target="_blank"
+                            aria-label="Joke Telling Bot Demo">
+                            <p>Click here for a live demo!</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card-description">
                     <h3>Joke-Teller-Bot</h3>
