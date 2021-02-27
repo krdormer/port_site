@@ -281,8 +281,8 @@ input:checked + .slider::before {
 
 /* ////////// Media Queries ////////// */
 
-/* Extra small devices (phones, 320px and down) */
-@media only screen and (max-width: 375px) {
+/* ////////////////////Extra small devices (phones, 320px and down) ////////////////////*/
+@media only screen and (max-width: 414px) {
   .section-title {
     font-size: 1em;
   }
