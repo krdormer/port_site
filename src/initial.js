@@ -4,7 +4,7 @@ let textArrayOne = lineOneText.split("");
 let textTwo = "I am a Web Developer from Austin, Texas.";
 let textArrayTwo = textTwo.split("");
 
-let textThree = "This is my portfolio!";
+let textThree = "Please take a look around!";
 let textArrayThree = textThree.split("");
 
 //////////////////////////////////////////////////////////////////////////////////////////
