@@ -300,9 +300,8 @@ i {
 
 /* ////////////////////////////////////////////// Media Queries ////////////////////////////////////////////// */
 
-@media only screen and (max-width: 320px) {
-/* For extra small smart phones (320px width and down) */
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 40px;
   }
@@ -463,4 +462,27 @@ i {
     font-size: 80px;
     margin-right: 0;
   }
-}
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  /* ////////// Small Navigation Section ////////// */
+
+  nav {
+    font-size: 20px;
+  }
+
+  a {
+    margin-right: 12px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
