@@ -274,16 +274,14 @@ input:checked + .slider::before {
 }
 
 /* ////////// Tech Section ////////// */
+
 .tech-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 50vw;
-  margin: 0 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .tech-image {
-  padding: 20px;
+  padding: 0.2em;
 }
 
 /* ////////// Contact Section ////////// */
