@@ -200,6 +200,7 @@ input:checked + .slider::before {
   border-radius: 50%;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 
 /* ////////// About Section ////////// */
@@ -466,6 +467,15 @@ i {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  /* ////////// Small Home Section ////////// */
+  .intro-group {
+    margin-top: 5em;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 230px;
+  }
 
   /* ////////// Small Navigation Section ////////// */
 
