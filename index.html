@@ -47,7 +47,6 @@
     <!-- Home Section -->
         <section id="home">
             <div class="intro-group">
-                <img src="./src/img/me.jpeg" alt="Picture of Kevin" class='profile-image'>
                 <h1 class='intro-text' id="type_text"></h1>
                 <h2 class='intro-text' id="type_text_two"></h2>
                 <h2 class='intro-text' id="type_text_three"></h2>
@@ -58,36 +57,18 @@
     <main>
         <!-- About Section -->
         <section id="about">
-            <h2 class='section-title'><span class='headline'>Some of my interests</span></h2>
-            <div class="about-container">
-                <div class="about-card">
-                    <h2 class="card-title">Problem Solving</h2>
-                    <img src="../src/img/problem_solving_light.svg" alt="Problem solving" id="image1">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Software Development</h2>
-                    <img src="../src/img/dev_light.svg" alt="Developer" id="image2">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Taking walks with my dogs</h2>
-                    <img src="../src/img/dog_walking_light.svg" alt="Dog walking" id="image3">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Trail Riding</h2>
-                    <img src="../src/img/biking_light.svg" alt="Bike Riding" id="image4">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Meditation</h2>
-                    <img src="../src/img/meditation_light.svg" alt="Sitting meditation" id="image5">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Yoga</h2>
-                    <img src="../src/img/yoga_light.svg" alt="Yoga" id="image6">
-                </div>
-                <div class="about-card">
-                    <h2 class="card-title">Escape Rooms</h2>
-                    <img src="../src/img/escape_room_light.svg" alt="Escape Room" id="image7">
-                </div>
+            <h2 class='section-title'><span class='headline'>A bit about me...</span></h2>
+            <div class='about-me'>
+            <p>I currenty reside in the beautiful state of Texas, in its weirdest city; Austin. I moved here from San Marcos, 
+                where I was pursuing and completed a Bachelor of Science in Psychology, with dual minors in Biology and Biochemistry at Texas State University.
+                I found my love of development in these science classes, but the data was so <em>dry</em>. What I really wanted was to 
+                build something for myself, which I would actually use and enjoy. From there I fell deep into the rabbit hole, and can't see myself doing anything else!
+                </p>
+                <p>On a personal level, my hobbies routinely include running, biking, meditation, yoga, walks with my dogs and my wife, 
+                    camping, and of course video games (Stardew Valley, anyone?). If you're interested in seeing some of my work, you can see 
+                    some live demos in the section below! If you just want to chat, feel free to reach out to me on LinkedIn or Github, both of which
+                    are linked at the bottom of the page.
+                </p>
             </div>
         </section>
 
@@ -95,55 +76,30 @@
         <section id="projects">
             <h2 class='section-title'><span class='headline'>My Projects</span></h2>
             <div class="project-container">
-                <div class="project-row">
-                    <div class="project-card" id='project-one-card'>
-                        <div class="project-card-content">
-                            <img src="./src/img/shopping_light.svg" alt="CRWN clothing" id="projectImageOne">
-                            <a href="https://pedantic-mcnulty-588e81.netlify.app/" target="_blank"
-                                aria-label="CRWN Clothing Demo">
-                                <p>Click here for a live demo!</p>
-                            </a>
-                        </div>
+                <div class="project-info">
+                    <div class="project-content">
+                        <img src="./src/img/shopping_light.svg" alt="CRWN clothing" id="projectImageOne">
+                        <a href="https://pedantic-mcnulty-588e81.netlify.app/" target="_blank"
+                            aria-label="CRWN Clothing Demo">
+                            <p>Click here for a live demo!</p>
+                        </a>
                     </div>
-                    <div class="project-card-description">
+                    <div class="project-description">
                         <h3>CRWN Clothing</h3>
                         <p>CRWN Clothing is a mock E-commerce site, utilizing React and Redux for front-end content and
                             state management. User information stored and verified with Google Firebase/Firestore</p>
                     </div>
                 </div>
 
-                <div class="project-row">
-                    <div class="project-card-description">
-                        <h3>Picture-In-Picture</h3>
-                        <p>Web app which will allow a user to select any open window or browser tab, and play an AV steam
-                            from the selected input. Once selected, click the start button and a new pop-up window will
-                            appear displaying the AV feed.
-                            This window can be moved, resized, and played over seperate content for a picture-in-picture
-                            effect.
-                        </p>
+                <div class="project-info">
+                    <div class="project-content">
+                        <img src="./src/img/jtb_light.svg" alt="Joke Telling">
+                        <a href="https://jovial-benz-9278be.netlify.app/" target="_blank"
+                            aria-label="Joke Telling Bot Demo">
+                            <p>Click here for a live demo!</p>
+                        </a>
                     </div>
-                    <div class="project-card" id='project-two-card'>
-                        <div class="project-card-content">
-                            <img src="./src/img/pip_light.svg" alt="Picture-In-Picture" id="projectImageTwo">
-                            <a href="https://ecstatic-tesla-028dec.netlify.app/" target="_blank"
-                                aria-label="Picture-In-Picture Demo">
-                                <p>Click here for a live demo!</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-row">
-                    <div class="project-card" id='project-three-card'>
-                        <div class="project-card-content">
-                            <img src="./src/img/joke_bot_light.svg" alt="Joke Telling Bot" id="projectImageThree">
-                            <a href="https://jovial-benz-9278be.netlify.app/" target="_blank"
-                                aria-label="Joke Telling Bot Demo">
-                                <p>Click here for a live demo!</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card-description">
+                    <div class="project-description">
                         <h3>Joke-Teller-Bot</h3>
                         <p>Web app demonstrating API usage. When the 'Tell me a joke' button is pressed, the JokeAPI is
                             called, which returns a programming joke. This data is then issued to the VoiceRSS API, which

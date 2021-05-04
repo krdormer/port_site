@@ -193,40 +193,14 @@ input:checked + .slider::before {
 
 /* ////////// Home Section ////////// */
 
-.profile-image {
-  display: inline-block;
-  width: 250px;
-  height: 280px;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0;
-  z-index: 1;
+.intro-group {
+  margin-top: 0;
 }
 
 /* ////////// About Section ////////// */
 
-#about {
-  margin-top: 12em;
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-}
-
-.about-card {
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  background: var(--background);
-  box-shadow: var(--box-shadow);
-  width: 25%;
-  margin: 1%;
-  padding: 2%;
-}
-
-.card-title {
+.about-me {
+  width: 80%;
   font-size: 1.8em;
 }
 
@@ -237,40 +211,38 @@ input:checked + .slider::before {
 }
 
 .project-container {
-  width: 100vw;
-}
-
-.project-row {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.project-card {
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 10%;
   margin-right: 5%;
-  flex: 50%;
 }
 
-.project-card-content {
+.project-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+}
+
+.project-content {
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   background: var(--background);
   box-shadow: var(--box-shadow);
-  margin: 5% auto;
+  width: 50%;
   padding: 10%;
 }
 
-.project-card-description {
-  flex: 50%;
-  font-size: 18px;
-  padding: 10%;
+.project-content img {
+  width: 100%;
+  height: 100%;
 }
 
-.project-card:hover {
+.project-description {
+  margin: 15%;
+  font-size: 1.8em;
+}
+
+.project-content:hover {
   transform: scale(1.1);
 }
 
@@ -278,16 +250,17 @@ input:checked + .slider::before {
 
 .tech-container {
   display: grid;
+  width: 60%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .tech-image {
-  padding: 0.2em;
+  width: 100%;
 }
 
 /* ////////// Contact Section ////////// */
 i {
-  font-size: 100px;
+  font-size: 150px;
   margin-right: 0;
   cursor: pointer;
   color: var(--primary-color);
@@ -296,293 +269,4 @@ i {
 .fab:hover {
   color: var(--on-background);
 }
-
-
-
-/* ////////////////////////////////////////////// Media Queries ////////////////////////////////////////////// */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
   
-  h2 {
-    font-size: 20px;
-  }
-
-  .headline {
-    line-height: 0;
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  /* ////////// X Small Navigation Section ////////// */
-  nav {
-    font-size: 10px;
-    letter-spacing: 0;
-    padding: 5%;
-  }
-  
-  a {
-    margin-right: 12px;
-  }
-  
-  /* ////////// X Small Dark Mode Toggle ////////// */
-  .theme-switch-wrapper {
-    right: 15px;
-    top: 35px;
-  }
-  
-  .theme-switch-wrapper span {
-    margin-right: 0;
-    font-size: 0.8rem;
-  }
-  
-  .toggle-text {
-    right: 2px;
-    top: 0;
-  }
-  
-  .theme-switch {
-    height: 16px;
-    width: 30px;
-  }
-  
-  .slider {
-    right: 0;
-  }
-  
-  .slider::before {
-    bottom: 0;
-    height: 17px;
-    left: 0;
-    width: 13px;
-  }
-
-  
-  input:checked + .slider::before {
-    transform: translateX(16px);
-  }
-  
-  .slider.round {
-    border-radius: 30px;
-  }
-  
-  .slider.round::before {
-    border-radius: 50%;
-  }
-  
-  .fas {
-    font-size: 15px;
-    margin-right: 7px;
-  }
-  
-  /* ////////// X Small Home Section ////////// */
-  
-  .profile-image {
-    width: 150px;
-    height: 180px;
-  }
-
-  .intro-group {
-    margin-top: 0;
-  }
-  
-  /* ////////// X Small About Section ////////// */
-  
-  #about {
-    margin-top: 0;
-  }
-  
-  .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    justify-self: center;
-  }
-
-  .about-card {
-    width: 80%;
-    margin: 8%;
-    padding: 2%;
-  }
-  
-  .card-title {
-    font-size: 0.8em;
-  }
-  
-  /* ////////// X Small Projects Section ////////// */
-  
-  #projects {
-    margin-top: 10em;
-    width: 100vw;
-  }
-  
-  .project-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-  }
-  
-  .project-card {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .project-card-content p {
-    font-size: 0.8em;
-  }
-
-  .project-card-description {
-    width: 90%;
-    font-size: 0.85em;
-    margin: 0 auto;
-  }
-  
-  /* ////////// X Small Tech Section ////////// */
-  
-  .tech-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-  }
-  
-  .tech-image {
-    font-size: 4em;
-    margin: 0 auto;
-  }
-  
-  /* ////////// X Small Contact Section ////////// */
-  #contact {
-    min-height: 50vh;
-    margin-bottom: 0;
-  }
-
-  i {
-    font-size: 80px;
-    margin-right: 0;
-  }
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /* ////////// Small Home Section ////////// */
-  .intro-group {
-    margin-top: 5em;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 230px;
-  }
-
-  /* ////////// Small Navigation Section ////////// */
-
-  nav {
-    font-size: 20px;
-  }
-
-  a {
-    margin-right: 12px;
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  
-  h2 {
-    font-size: 35px;
-  }
-  
-  .section-title {
-    font-size: 2.5em;
-  }
-
-  /* ////////// Large Home Section ////////// */
-  
-  .profile-image {
-    width: 200px;
-    height: 230px;
-  }
-
-  .intro-group {
-    margin-top: 4.8em;
-  }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  
-  h1 {
-    font-size: 110px;
-    margin-top: 0;
-  }
-  
-  h2 {
-    font-size: 60px;
-  }
-  
-  .headline {
-    font-size: 70px;
-  }
-
-  /* ////////// X Large Dark Mode Toggle ////////// */
-
-  .theme-switch-wrapper span {
-    margin-right: 10px;
-    font-size: 1.5rem;
-  }
-
-  .toggle-text {
-    right: 0;
-  }
-
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-  }
-
-  .fas {
-    font-size: 40px;
-    margin: 0;
-  }
-
-  
-  /* ////////// X Large Home Section ////////// */
-  
-  .profile-image {
-    display: inline-block;
-    width: 300px;
-    height: 350px;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* ////////// X Large Projects Section ////////// */
-  .project-card-description {
-    font-size: 30px;
-  }
-  
-  /* ////////// X Large Tech Section ////////// */
-  
-  .tech-container {
-    width: 80%;
-  }
-  
-  .tech-image {
-    padding: 0;
-    font-size: 12em;
-    margin: 5%;
-  }
-  
-  /* ////////// X Large Contact Section ////////// */
-  i {
-    font-size: 150px;
-    margin: 0 25px 25px 25px;
-    padding: 5px;
-  }
-}
