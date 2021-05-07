@@ -28,7 +28,7 @@ function imageMode(color) {
     image7.src = `../src/img/escape_room_${color}.svg`;
 
 
-    projectImageOne.src = `../src/img/shopping_${color}.svg`;
+    projectImageOne.src = `../src/img/crwn_${color}.svg`;
     projectImageTwo.src = `../src/img/pip_${color}.svg`;
     projectImageThree.src = `../src/img/joke_bot_${color}.svg`;
 }
