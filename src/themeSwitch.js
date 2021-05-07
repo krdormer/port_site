@@ -11,7 +11,8 @@ const projectImageThree = document.getElementById('projectImageThree');
 // Dark or Light Images 
 function imageMode(color) {
     projectImageOne.src = `../src/img/crwn_${color}.svg`;
-    projectImageTwo.src = `../src/img/joke_bot_${color}.svg`;
+    projectImageTwo.src = `../src/img/digital_magic_${color}.svg`;
+    projectImageThree.src = `../src/img/joke_bot_${color}.svg`;
 }
 
 function toggleDarkLightMode(isDark) {
