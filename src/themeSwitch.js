@@ -2,15 +2,6 @@ const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
 
-const image1 = document.getElementById('image1');
-const image2 = document.getElementById('image2');
-const image3 = document.getElementById('image3');
-const image4 = document.getElementById('image4');
-const image5 = document.getElementById('image5');
-const image6 = document.getElementById('image6');
-const image7 = document.getElementById('image7');
-
-
 const projectImageOne = document.getElementById('projectImageOne');
 const projectImageTwo = document.getElementById('projectImageTwo');
 const projectImageThree = document.getElementById('projectImageThree');
@@ -19,18 +10,8 @@ const projectImageThree = document.getElementById('projectImageThree');
 
 // Dark or Light Images 
 function imageMode(color) {
-    image1.src = `../src/img/problem_solving_${color}.svg`;
-    image2.src = `../src/img/dev_${color}.svg`;
-    image3.src = `../src/img/dog_walking_${color}.svg`;
-    image4.src = `../src/img/biking_${color}.svg`;
-    image5.src = `../src/img/meditation_${color}.svg`;
-    image6.src = `../src/img/yoga_${color}.svg`;
-    image7.src = `../src/img/escape_room_${color}.svg`;
-
-
     projectImageOne.src = `../src/img/crwn_${color}.svg`;
-    projectImageTwo.src = `../src/img/pip_${color}.svg`;
-    projectImageThree.src = `../src/img/joke_bot_${color}.svg`;
+    projectImageTwo.src = `../src/img/joke_bot_${color}.svg`;
 }
 
 function toggleDarkLightMode(isDark) {
